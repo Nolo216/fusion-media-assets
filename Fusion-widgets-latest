@@ -133,6 +133,56 @@
     {
       "cacheTTL" : 1800,
       "dataSource" : {
+        "kind" : "tmdbDiscover",
+        "payload" : {
+          "limit" : 10,
+          "sortBy" : "trending.week",
+          "type" : "movie",
+          "voteCountGTE" : 20
+        }
+      },
+      "id" : "discover.1564A2A2-01A4-4ACB-B2DA-6ADC00985D41",
+      "limit" : 10,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "sort" : "trending.week",
+      "title" : "Weekly Spotlight",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "tmdbDiscover",
+        "payload" : {
+          "limit" : 30,
+          "sortBy" : "popularity.desc",
+          "type" : "movie",
+          "voteCountGTE" : 50
+        }
+      },
+      "id" : "discover.81A16941-8D90-4B43-9D09-2B9B76824261",
+      "limit" : 30,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "sort" : "popularity.desc",
+      "title" : "Popular Movies",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
         "kind" : "addonCatalog",
         "payload" : {
           "addonId" : "https:\/\/top-streaming.stream\/2532ec59-69b6-4596-8be8-ca65dc8bb9a8\/manifest.json",
@@ -225,6 +275,31 @@
       "type" : "row.classic"
     },
     {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "tmdbDiscover",
+        "payload" : {
+          "limit" : 10,
+          "sortBy" : "trending.week",
+          "type" : "tv",
+          "voteCountGTE" : 100
+        }
+      },
+      "id" : "discover.EE5D439B-93C7-4859-9FF5-AD938F75055C",
+      "limit" : 10,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "sort" : "trending.week",
+      "title" : "Top 10 TV This Week",
+      "type" : "row.classic"
+    },
+    {
       "dataSource" : {
         "kind" : "collection",
         "payload" : {
@@ -307,6 +382,60 @@
       "id" : "collection.5AD963CC-B8A4-4A00-AE2E-4F51F86CCB0B",
       "title" : "Trending \/ Latest",
       "type" : "collection.row"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "tmdbDiscover",
+        "payload" : {
+          "limit" : 20,
+          "releaseChannel" : "cinema",
+          "releaseStatus" : "released",
+          "sortBy" : "popularity.desc",
+          "type" : "movie",
+          "voteCountGTE" : 20
+        }
+      },
+      "id" : "discover.91E47EA1-5E03-4D45-B929-68C4FB789F40",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "sort" : "popularity.desc",
+      "title" : "In Theaters Now",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "tmdbDiscover",
+        "payload" : {
+          "limit" : 20,
+          "releaseChannel" : "digital",
+          "releaseStatus" : "released",
+          "sortBy" : "popularity.desc",
+          "type" : "movie",
+          "voteCountGTE" : 30
+        }
+      },
+      "id" : "discover.27859A1C-FF79-4D17-B6B4-91E05CA49D0E",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "sort" : "popularity.desc",
+      "title" : "Recently Released",
+      "type" : "row.classic"
     },
     {
       "cacheTTL" : 3600,
